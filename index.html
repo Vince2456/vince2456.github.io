@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Mr. Vince | Portfolio</title>
+    <link rel="stylesheet" href="style.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // EmailJS initialization with your Public Key
+        (function() {
+            emailjs.init("tWY1vQ_kMm4LZUKCG");
+        })();
+    </script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    <header>
+      <nav class="container" aria-label="Main Navigation">
+        <div class="logo">Amoakohene Vincent</div>
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-label="Hero">
+        <div class="container hero-flex">
+          <div class="hero-image">
+            <img
+              src="./photo_2025-05-12_15-25-26.jpg"
+              alt="Amoakohene Vincent smiling, profile photo"
+            >
+          </div>
+          <div class="hero-content">
+            <h1>Hi, I'm <span class="typing-text">Amoakohene Vincent</span></h1>
+            <h2>An Aspiring Web Developer</h2>
+            <p>
+              I create beautiful, responsive websites that help businesses grow
+              online.
+            </p>
+            <a href="#contact" class="btn">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-label="About Me">
+        <div class="container about-flex">
+          <div class="about-image">
+            <img src="./THE WATCHMEN LOGO.png" alt="The Watchmen Logo" >
+          </div>
+          <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              Welcome to my Portfolio! I'm an aspiring web developer immersed in
+              the BSc. Information Technology Education programme at Akenten
+              Appiah-Menkah University of Skills Training and Entrepreneurial
+              Development (AAMUSTED).
+            </p>
+            <p>
+              I fell in love with web development because it's like solving a
+              puzzle every day—taking complex ideas and transforming them into
+              accessible and beautiful websites. I'm always eager to learn new
+              things and I'm particularly excited about creating accessible
+              experiences for everyone. Outside my studies, I'm often geeking
+              out over the latest tech innovations and also don't forget to seek
+              for more in Christ.
+            </p>
+            <dl class="about-info">
+              <div>
+                <dt>Name:</dt>
+                <dd>Amoakohene Vincent</dd>
+              </div>
+              <div>
+                <dt>Email:</dt>
+                <dd>
+                  <a href="mailto:kquophilyrical@gmail.com"
+                    >kquophilyrical@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div>
+                <dt>Experience:</dt>
+                <dd>Less than a year</dd>
+              </div>
+              <div>
+                <dt>Location:</dt>
+                <dd>Kumasi, Ghana</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills" aria-label="Skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-container">
+            <div class="skill">
+              <div class="skill-name"><i class="fab fa-html5"></i> HTML</div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name"><i class="fab fa-css3-alt"></i> CSS</div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name"><i class="fab fa-python"></i> Python</div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">
+                <i class="fas fa-paint-brush"></i> Graphic Design
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="85"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">
+                <i class="fas fa-book"></i> Bible Studying
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-skill-level="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects" aria-label="Projects">
+        <div class="container">
+          <h2 class="section-title">My Graphic Design Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img src="./WATCHMAN1.png" alt="Birthday Flyer project preview" >
+              <div class="project-info">
+                <h3>Birthday Flyer</h3>
+                <p>A modern birthday flyer for a client.</p>
+                <button
+                  type="button" 
+                  class="btn view-project-btn"
+                  data-image="./WATCHMAN1.png"
+                  data-title="Birthday Flyer"
+                >
+                  View Project
+                </button>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                src="./GD youtube thumbnail.jpg"
+                alt="YouTube Thumbnail project preview"
+              >
+              <div class="project-info">
+                <h3>Youtube Thumbnail</h3>
+                <p>A clean, thumbnail for a Youtube video.</p>
+                <button
+                  type="button"
+                  class="btn view-project-btn"
+                  data-image="./GD youtube thumbnail.jpg"
+                  data-title="Youtube Thumbnail"
+                >
+                  View Project
+                </button>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="./phones.jpg" alt="Business Flyer project preview" >
+              <div class="project-info">
+                <h3>A business flyer</h3>
+                <p>A nice business flyer for myself.</p>
+                <button
+                  type="button"
+                  class="btn view-project-btn"
+                  data-image="./phones.jpg"
+                  data-title="Business Flyer"
+                >
+                  View Project
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-label="Contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:kquophilyrical@gmail.com"
+                  >kquophilyrical@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+233534914148">+233(0)534914148</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>Kumasi, Ghana
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm" autocomplete="off">
+              <div class="form-success" id="formSuccess">
+                Thank you for your message! I'll get back to you soon.
+              </div>
+              <label for="name">Your Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                required
+              >
+              <div class="form-error" id="nameError"></div>
+              <label for="email">Your Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Your Email"
+                required
+              >
+              <div class="form-error" id="emailError"></div>
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+              >
+              <div class="form-error" id="subjectError"></div>
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div class="form-error" id="messageError"></div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Mr Amoakohene Vincent. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modal Popup -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 id="modalTitle">Project Title</h3>
+        <img id="modalImage" src="./WATCHMAN1.png" alt="Project preview" >
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
